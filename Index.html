@@ -17,7 +17,8 @@
 		 	sec = (secondsRound == 1) ? " seconde" : " secondes"; 
 		 	min = (minutesRound == 1) ? " minute" : " minutes, ";
 			hr = (hoursRound == 1) ? " heure" : " heures, ";
-		 	dy = (daysRound == 1) ? " jour" : " jours, " document.timeForm.input1.value = "Encore " + daysRound + dy + hoursRound + hr + minutesRound + min + secondsRound + sec + " avant le 31 Mars 2009 15 H 00 !"; newtime = window.setTimeout("getTime();", 1000); 
+		 	dy = (daysRound == 1) ?  jour : 
+			" jours, "+document.timeForm.input1.value = "Encore " + daysRound + dy + hoursRound + hr + minutesRound + min + secondsRound + sec + " avant le 31 Mars 2009 15 H 00 !"; newtime = window.setTimeout("getTime();", 1000); 
 		} //
 			--> </script> 
 	</head>
