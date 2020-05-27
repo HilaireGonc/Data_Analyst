@@ -17,12 +17,12 @@
 		 	sec = (secondsRound == 1) ? " seconde" : " secondes"; 
 		 	min = (minutesRound == 1) ? " minute" : " minutes, ";
 			hr = (hoursRound == 1) ? " heure" : " heures, ";
-		 	dy = (daysRound == 1) ?  jour : 
-			" jours, "+document.timeForm.input1.value = "Encore " + daysRound + dy + hoursRound + hr + minutesRound + min + secondsRound + sec + " avant le 31 Mars 2009 15 H 00 !"; newtime = window.setTimeout("getTime();", 1000); 
+		 	dy = (daysRound == 1) ?  "jour" : " jours, ";
+			document.timeForm.input1.value = "Encore " + daysRound + dy + hoursRound + hr + minutesRound + min + secondsRound + sec + " avant le 31 Mars 2009 15 H 00 !"; newtime = window.setTimeout("getTime();", 1000); 
 		} //
 			--> </script> 
 	</head>
-	<body onLoad="getTime()">
+	<body onLoad ="getTime()" >
 		<form name=timeForm>
 			<input type="texte" name=input1 size=110 border-style="none" style="border-bottom: 0px solid; border-left: 0px solid;border-right: 0px solid;border-top: 0px solid;font:12px arial, helvetica,sans-serif">
 			ICI
@@ -30,8 +30,8 @@
 		<script language="javascript">
 			<!-- function chrono() 
 			{ 
-				jour=Date.parse("Jun 8, 2020 GMT") - Date.parse(new Date); 
-				return(Math.round(jour/(24*60*60*1000)))
+				jour= Date.parse("Jun 8, 2020 GMT") - Date.parse(new Date); 
+				return (Math.round(jour/(24*60*60*1000)))
 			} 
 			document.write("Il reste "+chrono()+" jours avant le passage de Vénus devant le Soleil le 8 juin 2004"); 
 			//-->
